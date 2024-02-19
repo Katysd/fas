@@ -15,6 +15,13 @@
 	
 	}
 	
+	@keyframes move {
+		
+		from	{padding-right: 20px; padding-left: 20px;}
+		to		{padding-right: 0px; padding-left: 0px}
+		
+	}
+	
 	@keyframes statics {
 		
 		0% 		{background: url(https://i.imgur.com/QVVMhy5.png);}
@@ -67,12 +74,14 @@
 	user-select: none;
   }
   nav {
-    background: linear-gradient(90deg, rgba(0,128,0,0) 0%, pink 33%, pink 66%, rgba(73,255,73,0) 100%);;
-    padding: 10px 0;
+    background: linear-gradient(90deg, rgba(0,128,0,0) 0%, pink 33%, pink 66%, rgba(73,255,73,0) 100%);
     text-align: center;
-    /* border: 5px solid pink; */ /* Add border around the menu bar */
 	font-family: night;
 	user-select: none;
+	border-top: solid;
+	border-color: purple;
+    border-width: 4px;
+	padding-bottom: 8px;
   }
   nav ul {
     list-style: none;
@@ -150,7 +159,7 @@
   
   .navbuts {
   
-	color: rebeccapurple;
+	color: #ff00c6;
     text-shadow: 0 0 4px white;
 	font-size: 50px;
 	transition: 0.2s;
@@ -161,10 +170,11 @@
   
   .snavbuts {
   
-	color: white;
-    text-shadow: 0 0 4px white;
-	font-size: 60px;
-	user-select: none;
+	color: black;
+    text-shadow: 0 0 5px #ff00d9;
+    font-size: 60px;
+    user-select: none;
+    font-weight: 900;
   
   }
   
@@ -298,3 +308,33 @@
 		
 	}
 	
+	#n1 {
+		
+		color: black;
+		text-shadow: 0 0 5px #ff00d9;
+		font-size: 60px;
+		user-select: none;
+		font-weight: 900;
+		padding-right: 0px;
+		animation-name: move;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-timing-function: ease-in-out;
+	}
+	
+	#n2 {
+		
+		color: black;
+		text-shadow: 0 0 5px #ff00d9;
+		font-size: 60px;
+		user-select: none;
+		font-weight: 900;
+		padding-right: 0px;
+		animation-name: move;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-timing-function: ease-in-out;
+		
+	}
