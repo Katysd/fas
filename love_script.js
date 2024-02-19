@@ -1,5 +1,6 @@
 
 	starteds = false;
+	cursub = 1;
 	
 	function mostrarSubpagina(n) {
       var i;
@@ -37,8 +38,25 @@
       }
       document.getElementById("subsubs" + n).style.display = "block";
 	  document.getElementById("subsub" + n).style.background = 'linear-gradient(0deg, transparent, rebeccapurple, transparent)';
-		playSound()
+	  cursub = n;
+	  playSound()
     }
+	
+	function next() {
+		
+		if (cursub < 6) {
+			
+			cursub += 1;
+			mostrarSubSub(cursub);
+			
+		} else {
+			
+			mostrarSubSub(1);
+			cursub = 1;
+			
+		}
+		
+	}
 	
 	if (starteds == false) {
     // Execute the action

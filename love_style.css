@@ -10,9 +10,25 @@
 	
 	@keyframes appear {
 	
-		from 	{color: transparent; transform: scale(0);}
-		to 		{color: white;  transform: scale(1);}
+		from 	{color: transparent;}
+		to 		{color: pink;}
 	
+	}
+	
+	@keyframes statics {
+		
+		0% 		{background: url(https://i.imgur.com/QVVMhy5.png);}
+		25% 	{background: url(https://i.imgur.com/wRCXEoK.png);}
+		50% 	{background: url(https://i.imgur.com/LibDUuD.png);}
+		75%		{background: url(https://i.imgur.com/xfZVj4b.png);}
+		100%	{background: transparent;}
+	}
+	
+	@keyframes puls {
+		
+		from	{color: red; text-shadow: 0 0 5px red;}
+		to		{color: #ff00002b; text-shadow: 0 0 5px #ff00002b;}
+		
 	}
   
   #bodys {
@@ -82,7 +98,7 @@
 	user-select: none;
   }
   
-  .subsub {
+  .big-div2 {
     background-color: #00000075;
 	color: pink;
 	/* text-shadow: 0 0 4px white; */
@@ -94,8 +110,42 @@
 	border-radius: 25px;
 	font-size: 30px;
 	user-select: none;
+	transform: scale(0.75);
+  }
+  
+  .subsub {
+    background-image: url(https://i.imgur.com/7giZD2D.gif);
+	color: pink;
+	/* text-shadow: 0 0 4px white; */
+    padding: 20px;
+    margin-top: -40px;
+	text-align: center;
+	border: solid;
+	border-color: gray;
+	border-radius: 25px;
+	border-width: 8px;
+	font-size: 30px;
+	user-select: none;
 	animation-name: appear;
 	animation-duration: 1s;
+  }
+  
+  .subsub2 {
+    background: transparent;
+	color: pink;
+	/* text-shadow: 0 0 4px white; */
+	padding: 0px;
+	margin: -22px;
+	text-align: center;
+	border-radius: 25px;
+	font-size: 30px;
+	user-select: none;
+	animation-name: appear;
+	animation-duration: 1s;
+	backdrop-filter: brightness(0.25);
+	animation-name: statics, appear;
+    animation-duration: 0.2s, 1s;
+	mix-blend-mode: screen;
   }
   
   .navbuts {
@@ -184,14 +234,12 @@
 		flex: 1;
 		padding-bottom: 50px;
 		user-select: none;
-		draggable: false;
 	}
 	
 	.imagep3 img {
 		max-width: 100%;
-		height: auto;
+		height: 700px;
 		user-select: none;
-		draggable: false;
 		padding-top: 30px;
 	}
 	
@@ -200,3 +248,53 @@
 		padding: 0 20px; /* Adjust padding as needed */
 		user-select: none;
 	}
+	
+	#dot {
+		
+		background-color: red;
+		height: 40px;
+		width: 40px;
+		bottom: 45px;
+		right: 36px;
+		position: absolute;
+		z-index: 999;
+		border-radius: 100%;
+		box-shadow: 0 0 15px red;
+		
+	}
+	
+	#next {
+		
+		height: 40px;
+		width: 40px;
+		top: 45px;
+		right: 36px;
+		position: absolute;
+		z-index: 999;
+		border-radius: 100%;
+		
+	}
+	
+	#bott {
+		
+		height: 400px;
+		
+	}
+	
+	.rec {
+		
+		height: 40px;
+		display: flex;
+		position: absolute;
+		right: 50px;
+		align-items: center;
+		color: red;
+		font-weight: 900;
+		text-shadow: 0 0 5px red;
+		animation-name: puls;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		
+	}
+	
