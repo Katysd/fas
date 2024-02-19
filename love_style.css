@@ -1,0 +1,202 @@
+
+	body {margin: 0px;}
+  
+	@keyframes glow {
+		
+		from {backdrop-filter: blur(10px) brightness(0.5);}
+		to {backdrop-filter: blur(10px) brightness(1)}
+		
+	}
+	
+	@keyframes appear {
+	
+		from 	{color: transparent; transform: scale(0);}
+		to 		{color: white;  transform: scale(1);}
+	
+	}
+  
+  #bodys {
+    background-image: url(https://i.imgur.com/rmYqAXX.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Makes the background image fixed while scrolling */
+  }
+  
+   @font-face { font-family: night; src: url('night4.otf'); }
+  
+  .border-container {
+    position: relative;
+    padding: 0 20px; /* Adjust padding to control the width of the border */
+    box-sizing: border-box;
+	backdrop-filter: blur(10px);
+	animation-name: glow;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	user-select: none;
+  }
+  .container {
+    width: 100%; /* Full width */
+    max-width: 100%; /* Adjust maximum width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+	user-select: none;
+  }
+  img {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 65%; /* Ensure image doesn't exceed container width */
+	user-select: none;
+  }
+  nav {
+    background: linear-gradient(90deg, rgba(0,128,0,0) 0%, pink 33%, pink 66%, rgba(73,255,73,0) 100%);;
+    padding: 10px 0;
+    text-align: center;
+    /* border: 5px solid pink; */ /* Add border around the menu bar */
+	font-family: night;
+	user-select: none;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	user-select: none;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  .big-div {
+    background-color: #00000075;
+	color: pink;
+	/* text-shadow: 0 0 4px white; */
+    padding: 20px;
+    margin-top: 20px;
+	text-align: center;
+	border: solid;
+	border-color: pink;
+	border-radius: 25px;
+	font-size: 30px;
+	user-select: none;
+  }
+  
+  .subsub {
+    background-color: #00000075;
+	color: pink;
+	/* text-shadow: 0 0 4px white; */
+    padding: 20px;
+    margin-top: 20px;
+	text-align: center;
+	border: solid;
+	border-color: pink;
+	border-radius: 25px;
+	font-size: 30px;
+	user-select: none;
+	animation-name: appear;
+	animation-duration: 1s;
+  }
+  
+  .navbuts {
+  
+	color: rebeccapurple;
+    text-shadow: 0 0 4px white;
+	font-size: 50px;
+	transition: 0.2s;
+	border: 5px;
+	user-select: none;
+  
+  }
+  
+  .snavbuts {
+  
+	color: white;
+    text-shadow: 0 0 4px white;
+	font-size: 60px;
+	user-select: none;
+  
+  }
+  
+  .navbuts:hover {
+  
+	font-size: 60px;
+	text-decoration: underline;
+	user-select: none;
+  
+  }
+  
+	.testC2 {
+	
+		max-width: fir-content;
+		max-height: 200px;
+		display: inline-block;
+		margin: 20px;
+		position: relative;
+		transition: 0.5s;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		user-select: none;
+		user-select: none;
+		background: linear-gradient(0deg, transparent, black, transparent);
+		padding: 20px;
+		
+	}
+	
+	.testC2:hover {
+	
+		transform: scale(1.5);
+		max-width: fit-content;
+		z-index: 999;
+		user-select: none;
+	
+	}
+	
+	#music-toggle {
+		position: fixed;
+		top: 20px;
+		left: 10px;
+		z-index: 9999;
+		background-color: transparent;
+		padding: 10px 20px;
+		cursor: pointer;
+		user-select: none;
+		width: 10%;
+		border: none;
+		transition: 0.25s;
+	}
+	
+	#music-toggle:hover {
+		
+		transform: scale(1.1);
+		
+	}
+	
+	/* Page 3 stuff */
+	
+	.container3 {
+		display: flex;
+		align-items: center;
+		user-select: none;
+	}
+	
+	.imagep3 {
+		flex: 1;
+		padding-bottom: 50px;
+		user-select: none;
+		draggable: false;
+	}
+	
+	.imagep3 img {
+		max-width: 100%;
+		height: auto;
+		user-select: none;
+		draggable: false;
+		padding-top: 30px;
+	}
+	
+	.textpag3 {
+		flex: 1;
+		padding: 0 20px; /* Adjust padding as needed */
+		user-select: none;
+	}
